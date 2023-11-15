@@ -19,6 +19,11 @@ For instance, before formatting, 9 will produce the Unformatted roman numeral:
 - Performing IIII detection first produces VIV which is invalid
 - Performing VIIII detection first produces IX which is valid.
 
+To summarise:
+-1st Iteration: VIIII --> IX,       IIII --> VI
+-2nd Iteration: LXXXX --> XC,        XXXX --> XL
+-3rd Iteration: DCCCC --> CM,        CCCC --> CD
+
 Other interesting mathematical properties to note is that exponents of 0.5x10^n never appear consecutively twice.
 
 ## Unit Tests
