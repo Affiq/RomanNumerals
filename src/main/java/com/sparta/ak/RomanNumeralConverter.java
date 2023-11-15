@@ -48,7 +48,7 @@ public class RomanNumeralConverter {
                     toString();
 
             numeralString = numeralString.replace(searchedSubstring, replaceWithSubstring);
-            
+
             // Search for 0.4x10^ns... (i.e. IIII or XXXX) and convert (i.e IV or XL)
             searchedSubstring = replicateLetter(numeralLetters[i],4);
             replaceWithSubstring = new StringBuilder()
